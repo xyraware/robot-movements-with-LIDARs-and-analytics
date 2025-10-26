@@ -30,22 +30,22 @@ diff = measured_moisture - model_m
 plt.figure(figsize=(15, 10))
 
 plt.subplot(2, 2, 1)
-plt.title("Карта высот")
+plt.title("а) Карта высот")
 plt.imshow(heightmap, cmap='terrain', origin='lower')
 plt.colorbar(label="Высота (м)")
 
 plt.subplot(2, 2, 2)
-plt.title("Измеренная влажность")
+plt.title("б) Измеренная влажность")
 plt.imshow(measured_moisture, cmap='Blues', origin='lower', vmin=0, vmax=1)
 plt.colorbar(label="Влажность")
 
 plt.subplot(2, 2, 3)
-plt.title("Модельная влажность")
+plt.title("в) Модельная влажность")
 plt.imshow(model_m, cmap='Blues', origin='lower', vmin=0, vmax=1)
 plt.colorbar(label="Влажность (модель)")
 
 plt.subplot(2, 2, 4)
-plt.title("Разница (Измеренная − Модельная)")
+plt.title("г) Разница (Измеренная − Модельная)")
 plt.imshow(diff, cmap='coolwarm', origin='lower')
 plt.colorbar(label="Δ влажность")
 
